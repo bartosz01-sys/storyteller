@@ -1,0 +1,25 @@
+/* Custom scrollbar hiding */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Sidebar transitions */
+#sidebar {
+    transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Pattern overlay for the right panel */
+.pattern-overlay {
+    background-color: #f1f1f1; /* Fallback */
+    background-blend-mode: multiply;
+}
+
+/* Base styles to ensure dark mode background is consistent */
+body {
+    background-color: #111827; 
+    color: #f3f4f6; 
+}
