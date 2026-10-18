@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="index.css">
 </head>
-<body class="h-screen w-screen overflow-hidden flex flex-col font-sans">
+<body class="h-screen w-screen overflow-hidden flex flex-col font-sans" onload="init()">
 
     <!-- Top Bar -->
     <header class="bg-gray-800 border-b border-gray-700 h-14 flex items-center px-4 shrink-0 z-20">
@@ -61,8 +61,8 @@
                 imageUrl: "splash.jpg",
                 content: `
                 <div class='gallery grid grid-cols-1 md:grid-cols-1 gap-4 my-6'>
-                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[900px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='ayyb.jpg' class='w-full h-full object-cover object-top ' />
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[900px] md:h-auto rounded-lg '>
+                            <img src='ayyb.jpg' class='w-full h-full object-cover object-top 'style='max-width:400px; align-self: center; justify-self: center;' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
@@ -160,6 +160,12 @@
         renderSidebar();
         if(storiesData.length > 0) {
             loadStory(storiesData[0].id);
+        }
+
+        function init(){
+            if(storiesData.length > 0) {
+            loadStory(storiesData[0].id);
+            }
         }
 
         function renderSidebar() {
