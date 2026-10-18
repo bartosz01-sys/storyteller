@@ -32,13 +32,13 @@
         <div id="mobileOverlay" class="fixed inset-0 bg-black bg-opacity-50 z-0 hidden md:hidden"></div>
 
         <!-- Main Content Area -->
-        <main class="flex-1 flex overflow-hidden bg-gray-900">
+        <main class="flex-1 flex overflow-hidden bg-gray-900" style="border: none;">
             <div class="flex-1 overflow-y-auto no-scrollbar p-6 md:p-10 flex justify-center">
-                <div class="max-w-[1200px] w-full">
+                <div id= "main_content" class="max-w-[1200px] w-full" style="border: none;">
                     <h1 id="storyTitle" class="text-4xl md:text-5xl font-extrabold mb-8 transition-colors duration-300">Loading...</h1>
-                    <div id="storyContent" class="text-lg text-gray-300 leading-relaxed space-y-6"></div>
+                    <div id="storyContent" class="text-lg text-gray-300 space-y-3"></div>
                 </div>
-            <div class="hidden lg:block w-1/3 max-w-[500px] border-l border-gray-700 relative">
+            <div class="hidden lg:block w-1/3 max-w-[500px] relative">
                 <div id="storyImage" class="absolute inset-0 bg-cover bg-center pattern-overlay transition-all duration-500" style="background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); display:none;">
                     <div class="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent"></div>
                 </div>
@@ -68,38 +68,157 @@
                             </div>
                         </div>
                     </div>    
-                <h2 class='text-2xl font-bold mb-4 text-blue-400'>Abyrra</h2>
+                   <h2 class='text-2xl font-bold mb-4 text-blue-400'>Abyrra</h2>
                     <p class='mb-4'>Żaden statek nie próbował przekroczyć Burzy Świętego Marcela. Żeglarze mówią o tajemniczej wyspie w jej centrum, która skrywa odizolowaną cywilizację.</p>
                     <p class='mb-4'>Gracze przybywają na Abyrrę, wyspę niegdyś zamieszkiwaną przez lud Uwara, aby odnaleźć źródło tajemniczego spaczenia, które przemieniło ostatnich mieszkańców w obłąkane bestie. Przemierzając ruiny dawnego imperium, będą stopniowo odkrywać historię upadku Uwara. Nie planuje poziomów podwodnych ani bitew statków. Gracze wcielają się w poszukiwaczy przygód zdolnych w boju. Żaden z graczy nie jest znawcą Uwara.</p>
-                    <div class='gallery grid grid-cols-1 md:grid-cols-2 gap-4 my-6'>
-                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='https://picsum.photos/seed/sail1/600/400' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
-                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
-                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
-                            </div>
-                        </div>
-                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='https://picsum.photos/seed/sail2/600/400' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
-                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
-                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
-                            </div>
-                        </div>
-                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='https://picsum.photos/seed/sail3/600/400' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
-                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
-                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
-                            </div>
-                        </div>
-                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='https://picsum.photos/seed/sail4/600/400' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                    <div class='gallery grid grid-cols-1 md:grid-cols-1 gap-4 my-6'>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[900px] md:h-auto rounded-lg '>
+                            <img src='JK1.jpg' class='w-full h-full object-cover object-top 'style='max-width:400px; align-self: center; justify-self: center;' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
                         </div>
                     </div>
+                    <h2 class='text-2xl font-bold mb-4 text-blue-400'>Themes</h2>
+                    <div class='grid grid-cols-2 gap-4'>
+                        <div>
+                            <p><strong>Works of Culture</strong></p>
+                            <ul class="list-disc list-inside space-y-1 text-gray-300">
+                                <li>Godhusk</li>
+                                <li>Bloodborne</li>
+                                <li>Shadow Slave</li>
+                                <li>Drag-On Dragoon</li>
+                                <li>Blasphemous</li>
+                                <li>Dark Souls</li>
+                                <li>Hollow Knight</li>
+                                <li>Abyss board game</li>
+                                <li>Heart of Darkness</li>
+                                <li>Return of the Obra Dinn</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <p><strong>Tone</strong></p>
+                            <ul class="list-disc list-inside space-y-1 text-gray-300">
+                                <li>Focused on discovery rather than heroism</li>
+                                <li>Reflective</li>
+                                <li>Mysterious</li>
+                                <li>Occasionally horrific</li>
+                            </ul>       
+                        </div>
+                    </div>
+                    <div class='gallery grid grid-cols-1 md:grid-cols-2 gap-4 my-6'>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='tower.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='monster1.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='monster2.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='monster3.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='text-2xl font-bold mb-4 text-blue-400'>World / background:</h2>
+                    <strong><p>Świat</strong></p>
+                    <p>Gracze wyruszają z kontynentu, na którym znajdują się dowolne królestwa, imperia i klany, których mogą być członkami. Magia jest powszechnie znana, jednak jej rola oraz znaczenie różnią się w zależności od regionu. Świat utrzymany jest w luźnej konwencji fantasy.</p>
+                    <p>Postacie graczy są znacząco silniejsze niż przeciętny mieszkaniec świata.</p>
 
-                    <h2 class='text-2xl font-bold mb-4 text-blue-400'>Chapter 2: The Open Sea</h2>
-                    <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam aliquet massa et lorem.</p>
+                    <p><strong>Burza Świętego Marcela</strong> jest magicznym zjawiskiem utrzymującym się nieprzerwanie od pokoleń w tym samym miejscu. Prądy morskie prowadzą ku jej centrum, podczas gdy wiatry nieustannie wieją w przeciwnym kierunku. Powstanie tego fenomenu jest przedmiotem licznych spekulacji i legend, a związek ze świętym Marcelem bywa często kwestionowany.</p>
+                    
+                    <strong><p>Abyrra</strong></p>
+                    <p>Choć wyspa od pokoleń pozostaje odizolowana od świata, opowieści o jej bogactwach i tajemnicach nigdy całkowicie nie ucichły.</p>
+                    
+                    <div class='gallery grid grid-cols-1 md:grid-cols-2 gap-4 my-6'>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='shoip1.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='ship2.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='ship3.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='JK2.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='text-2xl font-bold mb-4 text-blue-400'>Principles for players and GMs to consider</h2>
+                    <p>Planuję pewien poziom narracji poprzez opisy przedmiotów, nazwy potworów oraz ekspozycję. Technicznie rzecz biorąc, postacie „in-game” nie mają dostępu do części tych informacji, dlatego gra będzie odbywać się na dwóch poziomach. Postacie mając ograniczoną wiedze będą mordować potwory przemierzając wyspę, podczas gdy gracze mogą snuć teorie co do generalnej historii tego miejsca.</p>
+
+                    <p>Gra ma elementy <strong>kooperacyjnego budowania historii</strong>, więc gracze będą będą czasem proszeni o spontaniczną improwizacją i odpowiedzieć na pytania typu: Jak się nazywa statek na którym płynęliście? Dla czego gracz X uważa cię za nie odpowiedzialngo? Albo wspólne budowanie sceny gdy potrzebujemy dodatkowych szczegółów i opisów dla flaworu.</p>
+
+                    <p>Chciałbym troche pobawić się muzyką bo dodaje do nastroju. Mile widziane jest świadome i celowe prowadzenie postaci w sposób wspierający atmosferę sceny. Jeśli opisuję że jest ciemno i coś czai się w ukryciu to granie przerażonych zamiast "moja postać by się nie bała".</p>
+
+                    <div class='gallery grid grid-cols-1 md:grid-cols-2 gap-4 my-6'>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='carab1.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='crab2.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='monster4.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                        <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
+                            <img src='abbys.jpg' class='w-full h-64 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
+                                <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <h2 class='text-2xl font-bold mb-4 text-blue-400'>Special mechanics</h2>
+                    <p><strong>Baseline</strong></p>
+                    <p>Zakładam, że postać na 8lvl ma: <strong>Ac 17</strong> i <strong>bije 2d10+10 dmg</strong> to AC0 creature.</p>
+                    <p><strong>Jak jesteś poniżej</strong> tego to możesz dobrać sobie dowolne magiczne rzeczy które robią jakiś cool stuf dla balansu ale z głową i imo fajniejsze są customowe zabawki niż te z książki w 🧵 przykładowe itemy z których ja jestem dość dumny.</p>
+                    <p><strong>Jak jesteś powyżej</strong> tego to przemyśl czy nie warto dodać do postaci jakiejś znaczącej cechy fatalnej lub istotnej słabości.</p>
+
+                    <p><strong>Ability Score Improvement / feat</strong> - dla zabawy i wyższego power lvla bierzemy za każdym razem oba 😛</p>
+
+                    <p><strong>Walka / enchant world</strong></p>
+                    Dla zwiększonej unikalności gry walki będą miały specjalne mechaniki w formie dodatkowych akcji lub innych specjalnych eventów. 
+
+
+
+
+
+
+
+                    <div style="height: 100px; background: transparent;"></div>
                 `
             },
             {
