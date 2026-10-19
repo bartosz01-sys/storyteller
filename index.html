@@ -80,7 +80,7 @@
                         </div>
                     </div>
                     <h2 class='text-2xl font-bold mb-4 text-blue-400'>Themes</h2>
-                    <div class='grid grid-cols-2 gap-4'>
+                    <div class='grid grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <div>
                             <p><strong>Works of Culture</strong></p>
                             <ul class="list-disc list-inside space-y-1 text-gray-300">
@@ -259,7 +259,7 @@
                         </div>
                     </div>    
                     <div class='grid grid-cols-3 md:grid-cols-3 gap-4 my-6' style='grid-template-columns: auto 500px auto;'>
-                         <div class="text-lg text-gray-300 space-y-3" style='grid-column-start: 2;'>
+                         <div class="text-lg text-gray-300 space-y-3" style='grid-column-start: 2; font-size: 0.85rem; md:font-size: 1.125rem'>
                             <p>Gods were eternal, unmoving, beyond space.<br>
                             Gods created time, and were timeless no more.</p>
 
@@ -275,7 +275,8 @@
 
                             <p>Tell me, if all possibilities happen somewhere,<br>
                             is the death of the gods a thing that may come to pass?</p>
-                            <p>And if it is written, what makes us believe it has not already happened?</p>
+                            <p>And if it is written, what makes us believe it <br>
+                                has not already happened?</p>
                         </div>
                         </div>
                         <h2 class='text-2xl font-bold mb-4 text-purple-400'>The Descent</h2>
@@ -298,7 +299,7 @@
                     </div>    
                     
                     <h2 class='text-2xl font-bold mb-4 text-purple-400'>Themes</h2>
-                    <div class='grid grid-cols-2 gap-4'>
+                    <div class='grid grid-cols-1 md:grid-cols-2 gap-4'>
                         <div>
                             <p><strong>Works of Culture</strong></p>
                             <ul class="list-disc list-inside space-y-1 text-gray-300">
@@ -314,7 +315,7 @@
                                 <li>Return of the Obra Dinn</li>
                             </ul>
                         </div>
-                        <div style='grid-column-start: 2;'>
+                        <div>
                             <p><strong>Books</strong></p>
                             <ul class="list-disc list-inside space-y-1 text-gray-300">
                                 <li>Heart of Darkness by Joseph Konrad</li>
@@ -347,13 +348,13 @@
                             </div>
                         </div>
                         <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='1 (10).jpg' class='w-full h-94 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <img src='1 (10).jpg' class='w-full h-124 md:h-53 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
                         </div>
                         <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='1 (6).jpg' class='w-full h-94 md:h-48 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <img src='1 (6).jpg' class='w-full h-124 md:h-53 object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
@@ -394,7 +395,7 @@
                 const li = document.createElement('li');
                 const a = document.createElement('a');
                 a.href = "#";
-                a.className = "block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700 hover:text-white transition-colors truncate";
+                a.className = "block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700 hover:text-white transition-colors";
                 a.innerText = story.title;
                 a.onclick = (e) => {
                     e.preventDefault();
