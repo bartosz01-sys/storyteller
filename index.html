@@ -258,8 +258,8 @@
                             </div>
                         </div>
                     </div>    
-                    <div class='grid grid-cols-3 md:grid-cols-3 gap-4 my-6' style='grid-template-columns: auto 500px auto;'>
-                         <div class="text-lg text-gray-300 space-y-3" style='grid-column-start: 2; font-size: 0.85rem; md:font-size: 1.125rem'>
+                    <div class='grid grid-cols-3 md:grid-cols-3  gap-4 my-6' style='grid-template-columns: auto 500px auto;'>
+                         <div class="text-sm md:text-lg text-gray-300 space-y-3" style='grid-column-start: 2;'>
                             <p>Gods were eternal, unmoving, beyond space.<br>
                             Gods created time, and were timeless no more.</p>
 
@@ -278,7 +278,7 @@
                             <p>And if it is written, what makes us believe it <br>
                                 has not already happened?</p>
                         </div>
-                        </div>
+                    </div>
                         <h2 class='text-2xl font-bold mb-4 text-purple-400'>The Descent</h2>
 
                         <p>A malignant force is spreading, slowly corrupting the very fabric of existence. After overcoming countless obstacles, a group of heroes discovered a path to the <strong>Land of the Gods</strong>. Some deserted right there, others insisted on another way, while a few chose to descend into the darkness below.</p>
@@ -395,7 +395,7 @@
                 const li = document.createElement('li');
                 const a = document.createElement('a');
                 a.href = "#";
-                a.className = "block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700 hover:text-white transition-colors";
+                a.className = "block px-3 py-2 rounded-md text-gray-300 hover:bg-gray-700 hover:text-white transition-colors ";
                 a.innerText = story.title;
                 a.onclick = (e) => {
                     e.preventDefault();
