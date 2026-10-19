@@ -336,25 +336,25 @@
                     </div>
                     <div class='gallery grid grid-cols-1 md:grid-cols-2 gap-4 my-6'>
                         <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='1 (7).jpg' class='w-full h-auto md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <img src='1 (7).jpg' class='w-full h-64 md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
                         </div>
                         <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='1 (4).jpg' class='w-full h-auto md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <img src='1 (4).jpg' class='w-full h-64 md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
                         </div>
                         <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='1 (10).jpg' class='w-full h-auto md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <img src='1 (10).jpg' class='w-full h-64 md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
                         </div>
                         <div class='gallery-item relative w-full overflow-hidden transition-all duration-500 max-h-16 md:max-h-[500px] md:h-auto rounded-lg border border-gray-700 bg-gray-800'>
-                            <img src='1 (6).jpg' class='w-full h-auto md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
+                            <img src='1 (6).jpg' class='w-full h-64 md:max-h-none object-cover object-top opacity-80 hover:opacity-100 transition-opacity' />
                             <div class='expand-btn absolute right-0 top-0 h-16 w-12 flex items-center justify-center bg-gray-900 bg-opacity-70 text-gray-400 cursor-pointer md:hidden'>
                                 <svg class='expand-icon w-5 h-5 transition-transform duration-300' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'></path></svg>
                             </div>
@@ -439,7 +439,7 @@
 
                             // Collapse all items in this gallery
                             items.forEach(otherItem => {
-                                otherItem.classList.remove('is-expanded', 'max-h-[500px]');
+                                otherItem.classList.remove('is-expanded', 'max-h-[800px]');
                                 otherItem.classList.add('max-h-16');
                                 const otherIcon = otherItem.querySelector('.expand-icon');
                                 if(otherIcon) otherIcon.style.transform = 'rotate(0deg)';
@@ -447,7 +447,7 @@
 
                             // Expand the clicked one if it wasn't already expanded
                             if (!isExpanded) {
-                                item.classList.add('is-expanded', 'max-h-[500px]');
+                                item.classList.add('is-expanded', 'max-h-[800px]');
                                 item.classList.remove('max-h-16');
                                 if(icon) icon.style.transform = 'rotate(180deg)';
                             }
